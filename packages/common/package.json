@@ -1,0 +1,31 @@
+{
+    "name": "@electrovir/iframe-pen-test-common",
+    "version": "0.0.0",
+    "private": true,
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/types/index.d.ts",
+    "scripts": {
+        "compile": "tsc --project tsconfig.json && tsc --project tsconfig.cjs.json",
+        "start": "nodemon --config configs/nodemon.json",
+        "test": "virmator test",
+        "test:all": "npm test",
+        "test:web": "virmator test-web"
+    },
+    "dependencies": {
+        "interlocking-iframe-messenger": "^4.0.5"
+    },
+    "devDependencies": {
+        "@electrovir/nyc": "^15.1.0-fix0",
+        "@istanbuljs/nyc-config-typescript": "^1.0.2",
+        "@types/chai": "^4.3.5",
+        "@types/mocha": "^10.0.1",
+        "chai": "^4.3.7",
+        "istanbul-smart-text-reporter": "^1.1.2",
+        "mocha": "^10.2.0",
+        "mocha-spec-reporter-with-file-names": "^0.0.3",
+        "nodemon": "^3.0.1",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.1.6"
+    }
+}

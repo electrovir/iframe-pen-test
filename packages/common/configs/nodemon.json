@@ -1,0 +1,10 @@
+{
+    "exec": "npm run compile",
+    "exitcrash": false,
+    "ext": "js,json,html,css,ts,tsx,jsx",
+    "ignore": [
+        "*.test.ts",
+        "dist/**"
+    ],
+    "watch": ["./src/"]
+}
